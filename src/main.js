@@ -508,14 +508,8 @@ drawChart({ config, language, weather, forecastItems } = this) {
   Chart.defaults.elements.point.radius = 2;
   Chart.defaults.elements.point.hitRadius = 10;
 
-  if (config.forecast.temperature1_color === 'auto') {
-    config.forecast.temperature1_color = textColor;
-  }
-  if (config.forecast.temperature2_color === 'auto') {
-    config.forecast.temperature2_color = textColor;
-  }
-  if (config.forecast.precipitation_color === 'auto') {
-    config.forecast.precipitation_color = textColor;
+  if (config.forecast.chart_text_color === 'auto') {
+    config.forecast.chart_text_color = textColor;
   }
 
   var datasets = [
